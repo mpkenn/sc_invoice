@@ -79,8 +79,8 @@ erDiagram
     WorkOrder ||--|{ Vehicle : has
     Customer ||--|{ Vehicle : owns
     WorkOrder ||--|{ Service : includes
-    WorkOrder ||--|{ Recommendation : has
-    PurchaseOrder ||--|{ Part : includes
+%%    WorkOrder ||--|{ Recommendation : has
+    Recommendation ||--|{ Service : has
     Invoice ||--|{ InvoiceItem : includes
     Service ||--|{ InvoiceItem : specifies
     Part ||--|{ InvoiceItem : specifies
@@ -89,4 +89,5 @@ erDiagram
     PurchaseOrder ||--|{ WorkOrder : associated
     PurchaseOrder ||--|{ PurchaseOrderItem : includes
     Part ||--|{ PurchaseOrderItem : specifies
+    Vehicle ||--|{ Recommendation : has
 ```
